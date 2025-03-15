@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+body{
+    background-color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container{
+    width: 100%;
+    max-width: 900px;
+
+}
+.profile-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 0 15px black;
+    overflow: hidden;
+    align-items: stretch;
+}
+.left-section{
+    flex: 1;
+    width: 35%;
+    max-width: 55%;
+    background: linear-gradient(135deg, rgb(137, 72, 186),whitesmoke);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.profile-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid rgb(233, 228, 228);
+    filter: drop-shadow(10px 10px 20px white);
+}
+.role{
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+h3{
+   margin-top: 20px;
+}
+.SOCIALMIDEA{
+    margin-top: 15px;
+}
+.SOCIALMIDEA a{
+    display: inline-block;
+    color: black;
+    margin: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    font-style: italic;
+}
+.right-secton{
+    flex: 2;
+    padding: 20px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+p{
+    margin-bottom: 10px;
+}
+.Skill{
+    margin-bottom: 15px;
+}
+.progress{
+    height: 5px;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    overflow: hidden;
+}
+.progress div{
+    height: 100%;
+    background: rgb(54, 232, 54);
+}
+ul{
+    padding-left: 20px;
+}
+li{
+    margin-left: 20px;
+}
+
+@media (max-width:768px){
+    .profile-box{
+        flex-direction: column;
+    }
+    .left-section, .right-secton{
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+}
